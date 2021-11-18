@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*
+    em HTML é id = em CSS é #
+    em HTML é class = em CSS é .
+
+
+    O Id so pode ser usado uma unica vez segundo o W3C
+    Já o no class pode ser usado mais de uma vez 
+*/
+body{
+    background-color: rgba(7, 139, 95, 0.61);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color:rgb(4, 73, 50);
+}
+h1#principal{
+    text-align: center;
+}
+.basico{
+color: yellow;
+}
+.intermediario{
+    color: green;
+}
+.avançado{
+    color: red;
+}
+h2{
+    color:rgb(7, 121, 83);
+}

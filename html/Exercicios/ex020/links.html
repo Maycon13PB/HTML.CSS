@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+
+        /*SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo-class (adicionada a seletores que especifica um estado especial do elemento selecionado. )
+        :: = pseudo-element(são utilizados para inserir um determinado conteúdo antes ou depois de um determinado elemento, independente do elemento selecionado.)
+        > = clildren*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+        a:hover{/*Serve para ppoder alterar a cor de um botão */
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        a::before{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ol>
+    <li><a href="https://www.youtube.com/watch?v=GcNl4wk2Tz4&list=RDMM&start_radio=1&rv=M253cDOxUQo" target="_blank">Musica que eu mais gosto</a></li>
+    <li><a href="https://www.youtube.com/watch?v=5PZWhT2R_0Y&list=RDMM&index=9" target="_blank">Musica que eu acho mais ou menos</a></li>
+    <li><a href="https://www.youtube.com/watch?v=3B4_XUj-0U4&list=RD3B4_XUj-0U4&start_radio=1" target="_blank">Musica que eu não gosto</a></li>
+</ol>
+</body>
+</html>
