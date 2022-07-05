@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --fonte-pasdrao: 'Lexend Deca', sans-serif;
+    --fonte-destaque: 'Inter', sans-serif;
+
+    --cor-fundo: hsl(233, 47%, 7%);
+    --cor-destaque: hsl(244, 38%, 16%);
+    --cor-contraste: hsla(0, 0%, 100%, 0.6);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+body{
+    background-color: var(--cor-fundo);
+}
+main{
+    background-color: var(--cor-destaque);
+    margin: auto;
+    width: 50%;
+    height: 40%;
+    display: flex;
+}
+.imagem{
+    order: 1;
+    position: relative;
+    
+}
